@@ -1,13 +1,20 @@
 package com.schedule.appointment.ResourceService.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Data
-public class ResourceRequest {
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResourceResponse {
 
+    private long resourceId;
     private String resourceType;
     private String resourceMeaning;
     private LocalDate resourceAvailabilityDate;

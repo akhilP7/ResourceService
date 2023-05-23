@@ -6,6 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +26,13 @@ public class Resource {
 
     @Column(name = "RESOURCE_MEANING")
     private String resourceMeaning;
+
+    @Column(name = "DATE_AVAILABILITY")
+    private LocalDate resourceAvailabilityDate;
+
+    @Column(name = "START_TIME")
+    private LocalTime resourceAvailabilityStartTime;
+
+    @Column(name = "END_TIME")
+    private LocalTime resourceAvailabilityEndTime;
 }
