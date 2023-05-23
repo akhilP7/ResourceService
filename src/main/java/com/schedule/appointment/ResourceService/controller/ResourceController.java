@@ -21,7 +21,7 @@ public class ResourceController {
     public ResponseEntity<Long> addResource(@RequestBody ResourceRequest resourceRequest){
 
         long resourceId = resourceService.addResource(resourceRequest);
-        return new ResponseEntity<>(resourceId, HttpStatus.CREATED);
+        return new ResponseEntity<>(resourceId, HttpStatus.OK);
     }
 
     @GetMapping("/{resourceId}")
