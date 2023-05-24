@@ -1,5 +1,14 @@
 package com.schedule.appointment.ResourceService.exception;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class ResourceServiceCustomException extends RuntimeException{
 
     private String errorCode;
