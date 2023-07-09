@@ -3,6 +3,10 @@ Resource service for scheduling appointment
 
 1. To create an appointment, resource creation is the initial step. It holds the resourceId, resourceMeaning, resourceType, availabilityDate, availabilityStartTime and availabilityEndTime.
 
+# DataBase
+1. Create a local instance in the MySQL, update the yaml file with respective connections and create respective schemas for each service.
+2. The schema name should be same in the both db and yaml file.
+
 # Dependency_Repositories
 
 1. [CONFIG_SERVER](https://github.com/akhilP7/Config-Server) - connection to the cloud config server GIT
