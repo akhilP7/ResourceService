@@ -1,7 +1,7 @@
 # ResourceService
 Resource service for scheduling appointment
 
-1. To create an appointment, resource creation is the initial step. It holds the resourceId, resourceMeaning, availabilityDate, availabilityStartTime and availabilityEndTime.
+1. To create an appointment, resource creation is the initial step. It holds the resourceId, resourceMeaning, resourceType, availabilityDate, availabilityStartTime and availabilityEndTime.
 
 # Dependency_Repositories
 
